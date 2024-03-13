@@ -3,4 +3,5 @@
     <string name="title_activity_lista_alarmas">ListaAlarmas</string>
     <string name="title_activity_inicio">InicioActivity</string>
     <string name="title_activity_crear_alarma">CrearAlarmaActivity</string>
+    <string name="title_activity_repeticion_alarma">RepeticionAlarmaActivity</string>
 </resources>

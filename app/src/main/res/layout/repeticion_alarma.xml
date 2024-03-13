@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Repeticion de alarma"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/divider_line" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/diario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Diario"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:background="@drawable/opciones_repeticion"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/cada_dos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cada dos dias"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/opciones_repeticion"
+
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/cada_semana"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cada semana"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/opciones_repeticion"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/dia_por_medio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Dia de por medio"
+            android:background="@drawable/opciones_repeticion"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/guardarButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button_save"
+            android:text="Guardar"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/signika_medium"/>
+        <Button
+            android:id="@+id/volverButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button_save"
+            android:text="Volver"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/signika_medium"/>
+    </LinearLayout>
+</LinearLayout>
