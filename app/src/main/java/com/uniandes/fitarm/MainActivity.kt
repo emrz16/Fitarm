@@ -1,20 +1,23 @@
 package com.uniandes.fitarm
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.uniandes.fitarm.ui.theme.FitarmTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val boton = findViewById<Button>(R.id.button)
+        boton.setOnClickListener {
+            cambiaAInicio()
+        }
     }
+
+    fun cambiaAInicio() {
+        val intent = Intent(this, ListaAlarmas::class.java)
+        startActivity(intent)
+    }
+
 }

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Fitarm</string>
+    <string name="title_activity_lista_alarmas">ListaAlarmas</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="title_activity_crear_alarma">CrearAlarmaActivity</string>
 </resources>
