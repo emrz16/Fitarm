@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
         android:id="@+id/bienvenida"
         android:layout_width="230dp"
         android:layout_height="200dp"
-        android:text="Bienvenido a Fitarm"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_vertical"
+        android:gravity="center"
+        android:text="Bienvenido a Fitarm"
+        android:fontFamily="@font/signika_medium"
         android:textColor="@color/black"
-        android:textSize="40dp"/>
-
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/frase"

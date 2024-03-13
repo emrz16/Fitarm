@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:background="@drawable/modal_background"
     android:padding="10dp">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal">
@@ -21,16 +21,17 @@
             android:text="6"
             android:padding="5dp"
             android:textColor="@color/black"/>
+
         <TextView
             android:id="@+id/dos_puntos"
             android:layout_width="30dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text=":"
-            android:textSize="30dp"
             android:ems="10"
             android:padding="5dp"
-            android:textColor="@color/black"/>
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
         <EditText
             android:id="@+id/minutos"
