@@ -12,6 +12,7 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center_vertical|center_horizontal"
         android:textColor="@color/black"
+        android:fontFamily="@font/signika_bold"
         android:textSize="30dp"/>
     <View
         android:layout_width="match_parent"
@@ -32,6 +33,7 @@
             android:layout_height="wrap_content"
             android:text="Nombre"
             android:textColor="@color/black"
+            android:fontFamily="@font/signika_bold"
             android:textSize="18dp" />
         <EditText
             android:id="@+id/nombre_input"
@@ -42,6 +44,8 @@
             android:ems="10"
             android:inputType="text"
             android:padding="5dp"
+            android:textSize="18dp"
+            android:text="Nombre de estudiante"
             android:textColor="@color/black"/>
         <TextView
             android:id="@+id/hora"
@@ -50,18 +54,42 @@
             android:layout_height="wrap_content"
             android:text="Hora"
             android:textColor="@color/black"
+            android:fontFamily="@font/signika_bold"
             android:textSize="18dp" />
-        <TextView
-            android:id="@+id/hora_input"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/hora_layout"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:padding="5dp"
-            android:background="@drawable/rounded_edittext_form"
-            android:ems="10"
-            android:inputType="text"
-            android:textColor="@color/black"/>
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:background="@drawable/rounded_edittext_form">
+            <TextView
+                android:id="@+id/hora_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:text="6:30                                                  am"
+                android:inputType="text"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/signika_medium"
+                android:textColor="@color/black"/>
 
+            <TextView
+                android:id="@+id/am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:text="am"
+                android:inputType="text"
+                android:textSize="18dp"
+                android:fontFamily="@font/signika_medium"
+                android:textColor="@color/black"/>
+        </LinearLayout>
         <TextView
             android:id="@+id/fecha"
             android:layout_marginTop="30dp"
@@ -69,17 +97,43 @@
             android:layout_height="wrap_content"
             android:text="Fecha"
             android:textColor="@color/black"
+            android:fontFamily="@font/signika_bold"
             android:textSize="18dp" />
-        <EditText
-            android:id="@+id/fecha_input"
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fecha_layout"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:padding="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounded_edittext_form"
-            android:ems="10"
-            android:inputType="text"
-            android:textColor="@color/black"/>
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:background="@drawable/rounded_edittext_form">
+            <TextView
+                android:id="@+id/fecha_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/signika_medium"
+                android:text="11/11/2023"
+                android:inputType="text"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_calendar_month_24" />
+
+        </LinearLayout>
+
+
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -97,6 +151,7 @@
                     android:layout_height="wrap_content"
                     android:text="Sonido"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/signika_bold"
                     android:textSize="18dp" />
                 <Button
                     android:id="@+id/sonido_button"
@@ -106,21 +161,26 @@
                     android:background="@drawable/rounded_button_save"
                     android:text="Sonido 1"
                     android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:fontFamily="@font/signika_medium"/>
 
             </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_marginLeft="40dp">
+                android:orientation="vertical">
                 <TextView
                     android:id="@+id/repeticion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Repeticion"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/signika_bold"
                     android:textSize="18dp" />
                 <Button
                     android:id="@+id/repeticion_button"
@@ -130,6 +190,7 @@
                     android:background="@drawable/rounded_button_save"
                     android:text="Diario"
                     android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:fontFamily="@font/signika_medium"/>
 
             </LinearLayout>
@@ -142,6 +203,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/rounded_button_save"
             android:text="Guardar"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/signika_medium"/>
@@ -152,6 +214,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/rounded_button_save"
             android:text="Volver"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/signika_medium"/>

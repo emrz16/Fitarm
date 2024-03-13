@@ -18,7 +18,7 @@ class ListaAlarmas : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inicio)
-        val boton = findViewById<Button>(R.id.addButton)
+        val boton = findViewById<Button>(R.id.add)
         boton.setOnClickListener {
             cambiaACrearAlarma()
         }

@@ -176,7 +176,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/addButton"
+        android:id="@+id/add"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/rounded_button"

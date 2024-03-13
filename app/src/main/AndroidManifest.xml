@@ -23,14 +23,14 @@
             android:label="@string/title_activity_crear_alarma"
             android:theme="@style/Theme.Fitarm" />
         <activity
-            android:name=".InicioActivity"
-            android:exported="false"
-            android:label="@string/title_activity_inicio"
-            android:theme="@style/Theme.Fitarm" />
-        <activity
             android:name=".ListaAlarmas"
             android:exported="false"
             android:label="@string/title_activity_lista_alarmas"
+            android:theme="@style/Theme.Fitarm" />
+        <activity
+            android:name=".SonidoAlarmaActivity"
+            android:exported="false"
+            android:label="SonidoAlarmaActivity"
             android:theme="@style/Theme.Fitarm" />
         <activity
             android:name=".MainActivity"

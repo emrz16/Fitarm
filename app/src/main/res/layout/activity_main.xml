@@ -11,13 +11,15 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img" />
+        android:src="@drawable/img"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="228dp"
         android:fontFamily="@font/signika_medium"
         android:text="Usuario"
         android:textColor="@color/white"
@@ -30,24 +32,27 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="363dp"
+        android:layout_marginTop="40dp"
         android:text="Contraseña"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/inputUsuario" />
 
     <EditText
         android:id="@+id/inputUsuario"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:inputType="text"
+        android:padding="5dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -55,26 +60,27 @@
         android:id="@+id/inputContrasena"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:inputType="text"
+        android:padding="5dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="140dp"
         android:layout_height="60dp"
-        android:layout_marginTop="76dp"
-        android:text="Ingresar"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/signika_medium"
+        android:text="Ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputContrasena"/>
+        app:layout_constraintTop_toBottomOf="@+id/inputContrasena" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
